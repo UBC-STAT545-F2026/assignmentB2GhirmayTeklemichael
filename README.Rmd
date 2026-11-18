@@ -1,0 +1,36 @@
+
+---
+output: github_document
+---
+
+#### assignmentB2GhirmayTeklemichael
+
+In this assignment a function called `calculate_range()` is provided in R package that calculates the difference between the maximum and minimum values.
+
+
+#### how to install it?
+
+You can install this package from GitHub using a devtool packages followed by the specific URL as shown below.
+
+```{r installation, eval=FALSE}
+devtools::install_github(
+  "UBC-STAT545-F2026/assignmentB2GhirmayTeklemichael"
+)
+```
+
+## load and test the package 
+
+Load the package and calculate the range of numeric values.
+
+```{r examples}
+library(assignmentB2GhirmayTeklemichael)
+
+# Calculate the range
+calculate_range(c(2, 5, 10, 20))
+
+# Remove missing values
+calculate_range(c(4, 8, NA, 12, 20), na_rm = TRUE)
+
+# Keep missing values
+calculate_range(c(4, 8, NA, 12, 20), na_rm = FALSE)
+```
